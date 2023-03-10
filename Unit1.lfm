@@ -1,0 +1,3885 @@
+object Form1: TForm1
+  Left = 25
+  Height = 675
+  Top = 25
+  Width = 900
+  HorzScrollBar.Increment = 86
+  HorzScrollBar.Page = 866
+  HorzScrollBar.Smooth = True
+  HorzScrollBar.Tracking = True
+  VertScrollBar.Increment = 67
+  VertScrollBar.Page = 675
+  VertScrollBar.Smooth = True
+  VertScrollBar.Tracking = True
+  ActiveControl = PageControl1
+  AutoScroll = True
+  Caption = 'Little Argyll GUI'
+  ClientHeight = 675
+  ClientWidth = 883
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDefaultPosOnly
+  LCLVersion = '1.2.6.0'
+  object StaticText0: TStaticText
+    Left = 700
+    Height = 17
+    Top = 200
+    Width = 65
+    TabOrder = 3
+  end
+  object PageControl1: TPageControl
+    Left = 8
+    Height = 1020
+    Top = 72
+    Width = 858
+    ActivePage = TabSheet5
+    BorderSpacing.Bottom = 8
+    TabIndex = 4
+    TabOrder = 2
+    OnChange = PageControl1Change
+    object TabSheet1: TTabSheet
+      Caption = 'Monitor calibration'
+      ClientHeight = 992
+      ClientWidth = 850
+      ImageIndex = 2
+      object Label51: TLabel
+        AnchorSideRight.Control = Image12
+        Left = 12
+        Height = 15
+        Top = 44
+        Width = 69
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Color profile:'
+        ParentColor = False
+      end
+      object Image12: TImage
+        Cursor = crHandPoint
+        Left = 87
+        Height = 24
+        Top = 39
+        Width = 24
+        AutoSize = True
+        OnClick = Image12Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Edit30: TEdit
+        Left = 117
+        Height = 23
+        Top = 40
+        Width = 400
+        TabOrder = 0
+      end
+      object Label52: TLabel
+        Left = 12
+        Height = 15
+        Top = 16
+        Width = 214
+        Caption = 'Set/clear the monitor profile (dispwin)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button13: TButton
+        Left = 534
+        Height = 25
+        Top = 39
+        Width = 75
+        Caption = 'Set'
+        OnClick = Button13Click
+        TabOrder = 1
+      end
+      object Button14: TButton
+        Left = 616
+        Height = 25
+        Top = 39
+        Width = 75
+        Caption = 'Clear -c'
+        OnClick = Button14Click
+        TabOrder = 2
+      end
+      object Button15: TButton
+        Left = 8
+        Height = 25
+        Top = 102
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button15Click
+        TabOrder = 3
+      end
+      object Edit31: TEdit
+        Left = 8
+        Height = 23
+        Top = 72
+        Width = 830
+        ParentFont = False
+        TabOrder = 4
+      end
+      object Label53: TLabel
+        Left = 12
+        Height = 15
+        Top = 160
+        Width = 223
+        Caption = 'Calibration/single-step profiling (dispcal)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label54: TLabel
+        AnchorSideRight.Control = ComboBox8
+        Left = 16
+        Height = 15
+        Top = 188
+        Width = 77
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'White point -t:'
+        ParentColor = False
+      end
+      object ComboBox8: TComboBox
+        Left = 99
+        Height = 23
+        Top = 184
+        Width = 100
+        AutoSelect = False
+        ItemHeight = 15
+        ItemIndex = 1
+        Items.Strings = (
+          '5000'
+          '5500'
+          '6500'
+          'Native'
+          'Custom:'
+        )
+        OnChange = ComboBox8Change
+        TabOrder = 5
+        Text = '5500'
+      end
+      object Edit60: TEdit
+        Left = 334
+        Height = 23
+        Top = 184
+        Width = 80
+        TabOrder = 6
+      end
+      object Label55: TLabel
+        AnchorSideRight.Control = Edit60
+        Left = 215
+        Height = 15
+        Top = 188
+        Width = 113
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Custom temperature:'
+        ParentColor = False
+      end
+      object Label56: TLabel
+        AnchorSideRight.Control = ComboBox9
+        Left = 20
+        Height = 15
+        Top = 216
+        Width = 73
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Brightness -b:'
+        ParentColor = False
+      end
+      object ComboBox9: TComboBox
+        Left = 99
+        Height = 23
+        Top = 212
+        Width = 100
+        AutoSelect = False
+        ItemHeight = 15
+        ItemIndex = 1
+        Items.Strings = (
+          '80'
+          '100'
+          '120'
+          'Custom:'
+        )
+        OnChange = ComboBox9Change
+        TabOrder = 7
+        Text = '100'
+      end
+      object Label57: TLabel
+        AnchorSideRight.Control = Edit61
+        Left = 225
+        Height = 15
+        Top = 216
+        Width = 103
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Custom brightness:'
+        ParentColor = False
+      end
+      object Edit61: TEdit
+        Left = 334
+        Height = 23
+        Top = 212
+        Width = 80
+        TabOrder = 8
+      end
+      object Label58: TLabel
+        AnchorSideRight.Control = ComboBox10
+        Left = 33
+        Height = 15
+        Top = 241
+        Width = 60
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Gamma -g:'
+        ParentColor = False
+      end
+      object ComboBox10: TComboBox
+        Left = 99
+        Height = 23
+        Top = 238
+        Width = 100
+        AutoSelect = False
+        ItemHeight = 15
+        ItemIndex = 1
+        Items.Strings = (
+          '1.8'
+          '2.2'
+          '2.4'
+          'sRGB'
+          'Custom:'
+        )
+        OnChange = ComboBox10Change
+        TabOrder = 9
+        Text = '2.2'
+      end
+      object Label59: TLabel
+        AnchorSideRight.Control = Edit62
+        Left = 239
+        Height = 15
+        Top = 241
+        Width = 89
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Custom gamma:'
+        ParentColor = False
+      end
+      object Edit62: TEdit
+        Left = 334
+        Height = 23
+        Top = 238
+        Width = 80
+        TabOrder = 10
+      end
+      object Label60: TLabel
+        AnchorSideRight.Control = ComboBox11
+        Left = 37
+        Height = 15
+        Top = 270
+        Width = 56
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Quality -q:'
+        ParentColor = False
+      end
+      object ComboBox11: TComboBox
+        Left = 99
+        Height = 23
+        Top = 266
+        Width = 100
+        AutoSelect = False
+        ItemHeight = 15
+        ItemIndex = 1
+        Items.Strings = (
+          'Low'
+          'Medium'
+          'High'
+        )
+        TabOrder = 11
+        Text = 'Medium'
+      end
+      object Label61: TLabel
+        AnchorSideRight.Control = ComboBox12
+        Left = 12
+        Height = 15
+        Top = 298
+        Width = 81
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Display type -y:'
+        ParentColor = False
+        ParentShowHint = False
+      end
+      object ComboBox12: TComboBox
+        Left = 99
+        Height = 23
+        Top = 294
+        Width = 100
+        AutoSelect = False
+        DropDownCount = 15
+        ItemHeight = 15
+        Items.Strings = (
+          ''
+          'b'
+          'B'
+          'c'
+          'e'
+          'f'
+          'F'
+          'g'
+          'l'
+          'L'
+          'n'
+          'p'
+          'r'
+          'R'
+          'x'
+        )
+        ParentShowHint = False
+        TabOrder = 12
+      end
+      object Label63: TLabel
+        AnchorSideRight.Control = Image13
+        Left = 12
+        Height = 15
+        Top = 354
+        Width = 96
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Override name -o:'
+        ParentColor = False
+      end
+      object Image13: TImage
+        Cursor = crHandPoint
+        Left = 114
+        Height = 24
+        Top = 348
+        Width = 24
+        AutoSize = True
+        OnClick = Image13Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963A402000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          6B49444154785EB5964B48156F18879F998E78414183AE680511B5510A2138C5
+          1F8F2EDCB489362214444404918B68618BFA1348482854D2C62288DC088205B9
+          118FB548BA2D927413899DC86E145AC7CB39672EDFDBCC371087230D8C781EE6
+          E30703F33EDF3BEF30338688504C8C64F2898C8E4EB19EB4B6D6D3D292300062
+          7EF1B633A7580B079E3FE44DFCE8AA1CECBFE70BD0028097EF9688CAD9F931AE
+          1EBFCBFF03ACCA41607CFCA9F85D68C1546A99A89C23CEED012FD3ABB38A1102
+          400BAA3E8EB0163A41172B4C4DBEA0BBFB3CEB4967675FBE2020959AD1F9E243
+          29DF16B24CCEFC62E6F3124A14AE1210D8601A98DE125154969770A97D1FBBAA
+          17C96776768E7C4C0A487D5FA6A5B1960B6DF58CF52648F634337ABD99C7D79A
+          48F63633D693E0515782FE8B71869E7D61FA6B1905840AF4CE11187E954644E8
+          E87B8D520246B07BCB1132B6C2768563FFEDE0E6F0FB6882B91F196C2528A548
+          AFB89886A18B95979A64728AF945979CADB4F467DAE6F762369A40DF73114420
+          E708974FEEA72466E21DAC780247F9C541106CC7D5F308234601AE12940B88D0
+          757F12D3400B0C206BB9087FE170C33610892640822E9472D9B4653B06020220
+          54B80A1141F94B296CDB81881D6872565008043000D19D89168B968B974B2B96
+          974E5441500C812BED7584716B683AF20CF453E30643E4C6C469FE4547FC0E96
+          E3449F010628257E70A8F60461B8B6022276B075631919CBA571773907773611
+          46D6B2A9AE2C8D26686AD8CCC4E427DECE2ED0FD201B0C5B14E22F153C3588E8
+          F3551531F6D4D5840B0A5F520D35C13AB2D7042A0823EFDA50817EBD168B98F7
+          2D30FCCF1B45A2E8BF2D7F0019D65994EE62F95F0000000049454E44AE426082
+        }
+      end
+      object Edit32: TEdit
+        Left = 144
+        Height = 23
+        Top = 348
+        Width = 400
+        TabOrder = 13
+      end
+      object Label64: TLabel
+        AnchorSideRight.Control = Edit33
+        Left = 11
+        Height = 15
+        Top = 382
+        Width = 127
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Override description -O:'
+        ParentColor = False
+      end
+      object Edit33: TEdit
+        Left = 144
+        Height = 23
+        Top = 378
+        Width = 400
+        TabOrder = 14
+      end
+      object CheckBox1: TCheckBox
+        Left = 219
+        Height = 19
+        Top = 267
+        Width = 73
+        Caption = 'Update -u'
+        TabOrder = 15
+      end
+      object Label65: TLabel
+        AnchorSideRight.Control = Image14
+        Left = 11
+        Height = 15
+        Top = 412
+        Width = 97
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Colorimiter file -X:'
+        ParentColor = False
+      end
+      object Image14: TImage
+        Cursor = crHandPoint
+        Left = 114
+        Height = 24
+        Top = 406
+        Width = 24
+        AutoSize = True
+        OnClick = Image14Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Edit34: TEdit
+        Left = 144
+        Height = 23
+        Top = 408
+        Width = 400
+        TabOrder = 16
+      end
+      object Edit24: TEdit
+        Left = 8
+        Height = 23
+        Top = 440
+        Width = 830
+        TabOrder = 17
+      end
+      object Button16: TButton
+        Left = 8
+        Height = 25
+        Top = 470
+        Width = 75
+        Caption = 'Generate'
+        OnClick = Button16Click
+        TabOrder = 18
+      end
+      object Button17: TButton
+        Left = 90
+        Height = 25
+        Top = 470
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button17Click
+        TabOrder = 19
+      end
+      object Button18: TButton
+        Left = 452
+        Height = 25
+        Top = 184
+        Width = 210
+        Caption = 'Report on calibrated display -r'
+        OnClick = Button18Click
+        TabOrder = 20
+      end
+      object Button19: TButton
+        Left = 452
+        Height = 25
+        Top = 212
+        Width = 210
+        Caption = 'Report on uncalibrated display -R'
+        OnClick = Button19Click
+        TabOrder = 21
+      end
+      object CheckBox7: TCheckBox
+        Left = 304
+        Height = 19
+        Top = 267
+        Width = 186
+        Caption = 'High resolution (if available) -H'
+        TabOrder = 22
+      end
+      object CheckBox8: TCheckBox
+        Left = 12
+        Height = 19
+        Top = 324
+        Width = 115
+        Caption = 'Create a profile -o'
+        Checked = True
+        OnChange = CheckBox8Change
+        State = cbChecked
+        TabOrder = 23
+      end
+      object Label89: TLabel
+        AnchorSideRight.Control = Edit39
+        Left = 12
+        Height = 15
+        Top = 520
+        Width = 171
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Remember the monitor settings:'
+        ParentColor = False
+      end
+      object Edit39: TEdit
+        Left = 189
+        Height = 23
+        Top = 516
+        Width = 356
+        TabOrder = 24
+      end
+      object Image21: TImage
+        Cursor = crHandPoint
+        Left = 96
+        Height = 16
+        Top = 106
+        Width = 16
+        AutoSize = True
+        OnClick = Image21Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Image22: TImage
+        Cursor = crHandPoint
+        Left = 178
+        Height = 16
+        Top = 474
+        Width = 16
+        AutoSize = True
+        OnClick = Image22Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Image33: TImage
+        Left = 698
+        Height = 16
+        Hint = 'These buttons run their respective commands directly.'
+        Top = 43
+        Width = 16
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+          25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+          0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+          E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+          7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+          244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+          781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+          408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+          9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+          4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+          B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+          62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+          43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+          E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+          9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+          FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+          D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+          788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+          4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+          892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+          48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+          173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+          0049454E44AE426082
+        }
+        ShowHint = True
+      end
+      object Image34: TImage
+        Left = 206
+        Height = 16
+        Hint = 'Specific to most colorimeters; see “Operation of particular instruments” (instruments.html).'
+        Top = 297
+        Width = 16
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+          25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+          0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+          E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+          7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+          244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+          781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+          408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+          9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+          4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+          B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+          62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+          43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+          E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+          9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+          FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+          D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+          788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+          4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+          892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+          48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+          173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+          0049454E44AE426082
+        }
+        ShowHint = True
+      end
+      object Image36: TImage
+        Left = 550
+        Height = 16
+        Hint = 'Brightness, contrast, red, green, blue, etc.  Save here for convenience only.'
+        Top = 519
+        Width = 16
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+          25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+          0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+          E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+          7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+          244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+          781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+          408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+          9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+          4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+          B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+          62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+          43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+          E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+          9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+          FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+          D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+          788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+          4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+          892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+          48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+          173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+          0049454E44AE426082
+        }
+        ShowHint = True
+      end
+      object Label102: TLabel
+        AnchorSideLeft.Side = asrBottom
+        Cursor = crHandPoint
+        Left = 282
+        Height = 15
+        Top = 475
+        Width = 111
+        BorderSpacing.Left = 6
+        Caption = 'web browsing profile'
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label102Click
+      end
+      object Label103: TLabel
+        AnchorSideLeft.Side = asrBottom
+        Cursor = crHandPoint
+        Left = 403
+        Height = 15
+        Top = 475
+        Width = 136
+        BorderSpacing.Left = 6
+        Caption = 'print workflow calibration'
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label103Click
+      end
+      object Label38: TLabel
+        Left = 225
+        Height = 15
+        Top = 475
+        Width = 52
+        Caption = 'examples:'
+        ParentColor = False
+      end
+      object Label62: TLabel
+        Left = 397
+        Height = 15
+        Top = 475
+        Width = 3
+        Caption = '|'
+        ParentColor = False
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Monitor profiling'
+      ClientHeight = 992
+      ClientWidth = 850
+      object Label66: TLabel
+        Left = 12
+        Height = 15
+        Top = 16
+        Width = 173
+        Caption = 'Generate patch values (targen)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label67: TLabel
+        AnchorSideRight.Control = Edit70
+        Left = 40
+        Height = 15
+        Top = 44
+        Width = 155
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Patches - white (default 4) -e:'
+        ParentColor = False
+      end
+      object Label68: TLabel
+        AnchorSideRight.Control = Edit71
+        Left = 92
+        Height = 15
+        Top = 68
+        Width = 103
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'black (default 4) -B:'
+        ParentColor = False
+      end
+      object Label69: TLabel
+        AnchorSideRight.Control = Edit72
+        Left = 16
+        Height = 15
+        Top = 92
+        Width = 179
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'single channel steps (default 0) -s:'
+        ParentColor = False
+      end
+      object Label70: TLabel
+        AnchorSideRight.Control = Edit73
+        Left = 45
+        Height = 15
+        Top = 116
+        Width = 150
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'gray axis steps (default 0) -g:'
+        ParentColor = False
+      end
+      object Label71: TLabel
+        AnchorSideRight.Control = Edit74
+        Left = 12
+        Height = 15
+        Top = 140
+        Width = 183
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'full spread, to total (default 836) -f:'
+        ParentColor = False
+      end
+      object Edit70: TEdit
+        Left = 201
+        Height = 23
+        Top = 40
+        Width = 49
+        TabOrder = 0
+      end
+      object Edit71: TEdit
+        Left = 201
+        Height = 23
+        Top = 64
+        Width = 49
+        TabOrder = 1
+      end
+      object Edit72: TEdit
+        Left = 201
+        Height = 23
+        Top = 88
+        Width = 49
+        TabOrder = 2
+      end
+      object Edit73: TEdit
+        Left = 201
+        Height = 23
+        Top = 112
+        Width = 49
+        TabOrder = 3
+      end
+      object Edit74: TEdit
+        Left = 201
+        Height = 23
+        Top = 136
+        Width = 49
+        TabOrder = 4
+      end
+      object Label72: TLabel
+        AnchorSideRight.Control = Image15
+        Left = 21
+        Height = 15
+        Top = 172
+        Width = 144
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Pre-conditioning profile -c:'
+        ParentColor = False
+      end
+      object Image15: TImage
+        Cursor = crHandPoint
+        Left = 171
+        Height = 24
+        Top = 168
+        Width = 24
+        AutoSize = True
+        OnClick = Image15Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Edit25: TEdit
+        Left = 201
+        Height = 23
+        Top = 168
+        Width = 400
+        TabOrder = 5
+      end
+      object Edit26: TEdit
+        Left = 8
+        Height = 23
+        Top = 200
+        Width = 830
+        TabOrder = 6
+      end
+      object Button20: TButton
+        Left = 8
+        Height = 25
+        Top = 230
+        Width = 75
+        Caption = 'Generate'
+        OnClick = Button20Click
+        TabOrder = 7
+      end
+      object Button21: TButton
+        Left = 90
+        Height = 25
+        Top = 230
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button21Click
+        TabOrder = 8
+      end
+      object Label73: TLabel
+        Left = 12
+        Height = 15
+        Top = 288
+        Width = 154
+        Caption = 'Read the patches (dispread)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label74: TLabel
+        AnchorSideRight.Control = ComboBox13
+        Left = 12
+        Height = 15
+        Top = 316
+        Width = 81
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Display type -y:'
+        ParentColor = False
+        ParentShowHint = False
+      end
+      object ComboBox13: TComboBox
+        Left = 99
+        Height = 23
+        Top = 312
+        Width = 100
+        AutoSelect = False
+        DropDownCount = 15
+        ItemHeight = 15
+        Items.Strings = (
+          ''
+          'b'
+          'B'
+          'c'
+          'e'
+          'f'
+          'F'
+          'g'
+          'l'
+          'L'
+          'n'
+          'p'
+          'r'
+          'R'
+          'x'
+        )
+        TabOrder = 9
+      end
+      object CheckBox6: TCheckBox
+        Left = 246
+        Height = 19
+        Top = 314
+        Width = 186
+        Caption = 'High resolution (if available) -H'
+        TabOrder = 10
+      end
+      object Edit35: TEdit
+        Left = 145
+        Height = 23
+        Top = 374
+        Width = 400
+        TabOrder = 11
+      end
+      object Image17: TImage
+        Cursor = crHandPoint
+        Left = 115
+        Height = 24
+        Top = 372
+        Width = 24
+        AutoSize = True
+        OnClick = Image17Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Label77: TLabel
+        AnchorSideRight.Control = Image17
+        Left = 12
+        Height = 15
+        Top = 378
+        Width = 97
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Colorimiter file -X:'
+        ParentColor = False
+      end
+      object Label76: TLabel
+        AnchorSideRight.Control = Image16
+        Left = 15
+        Height = 15
+        Top = 348
+        Width = 94
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Calibration file -k:'
+        ParentColor = False
+      end
+      object Image16: TImage
+        Cursor = crHandPoint
+        Left = 115
+        Height = 24
+        Top = 344
+        Width = 24
+        AutoSize = True
+        OnClick = Image16Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Edit27: TEdit
+        Left = 145
+        Height = 23
+        Top = 344
+        Width = 400
+        TabOrder = 12
+      end
+      object Edit28: TEdit
+        Left = 8
+        Height = 23
+        Top = 406
+        Width = 830
+        TabOrder = 13
+      end
+      object Button22: TButton
+        Left = 8
+        Height = 25
+        Top = 436
+        Width = 75
+        Caption = 'Generate'
+        OnClick = Button22Click
+        TabOrder = 14
+      end
+      object Button23: TButton
+        Left = 90
+        Height = 25
+        Top = 436
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button23Click
+        TabOrder = 15
+      end
+      object Label78: TLabel
+        Left = 12
+        Height = 15
+        Top = 494
+        Width = 198
+        Caption = 'Create the monitor profile (colprof)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label79: TLabel
+        AnchorSideRight.Control = Edit133
+        Left = 12
+        Height = 15
+        Top = 522
+        Width = 91
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Manufacturer -A:'
+        ParentColor = False
+      end
+      object Edit133: TEdit
+        Left = 109
+        Height = 23
+        Top = 518
+        Width = 255
+        TabOrder = 16
+      end
+      object Label80: TLabel
+        AnchorSideRight.Control = Edit134
+        Left = 47
+        Height = 15
+        Top = 546
+        Width = 56
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Model -M:'
+        ParentColor = False
+      end
+      object Edit134: TEdit
+        Left = 109
+        Height = 23
+        Top = 542
+        Width = 255
+        TabOrder = 17
+      end
+      object Label81: TLabel
+        Left = 410
+        Height = 15
+        Top = 545
+        Width = 222
+        Caption = 'Override output file name && extension -O:'
+        ParentColor = False
+      end
+      object Label82: TLabel
+        AnchorSideRight.Control = Edit135
+        Left = 24
+        Height = 15
+        Top = 570
+        Width = 79
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Description -D:'
+        ParentColor = False
+      end
+      object Edit135: TEdit
+        Left = 109
+        Height = 23
+        Top = 566
+        Width = 255
+        TabOrder = 18
+      end
+      object Edit29: TEdit
+        Left = 410
+        Height = 23
+        Top = 565
+        Width = 285
+        TabOrder = 19
+      end
+      object Label83: TLabel
+        AnchorSideRight.Control = Edit136
+        Left = 31
+        Height = 15
+        Top = 594
+        Width = 72
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Copyright -C:'
+        ParentColor = False
+      end
+      object Edit136: TEdit
+        Left = 109
+        Height = 23
+        Top = 590
+        Width = 255
+        TabOrder = 20
+      end
+      object Label88: TLabel
+        AnchorSideRight.Control = Image19
+        Left = 12
+        Height = 15
+        Top = 625
+        Width = 141
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Gamut mapping profile -S:'
+        ParentColor = False
+      end
+      object Image19: TImage
+        Cursor = crHandPoint
+        Left = 159
+        Height = 24
+        Top = 619
+        Width = 24
+        AutoSize = True
+        OnClick = Image19Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Edit37: TEdit
+        Left = 189
+        Height = 23
+        Top = 622
+        Width = 400
+        TabOrder = 21
+      end
+      object Edit38: TEdit
+        Left = 8
+        Height = 23
+        Top = 654
+        Width = 830
+        TabOrder = 22
+      end
+      object Button24: TButton
+        Left = 8
+        Height = 25
+        Top = 684
+        Width = 75
+        Caption = 'Generate'
+        OnClick = Button24Click
+        TabOrder = 23
+      end
+      object Button25: TButton
+        Left = 90
+        Height = 25
+        Top = 684
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button25Click
+        TabOrder = 24
+      end
+      object Image23: TImage
+        Cursor = crHandPoint
+        Left = 178
+        Height = 16
+        Top = 234
+        Width = 16
+        AutoSize = True
+        OnClick = Image23Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Image24: TImage
+        Cursor = crHandPoint
+        Left = 178
+        Height = 16
+        Top = 440
+        Width = 16
+        AutoSize = True
+        OnClick = Image24Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Image25: TImage
+        Cursor = crHandPoint
+        Left = 178
+        Height = 16
+        Top = 688
+        Width = 16
+        AutoSize = True
+        OnClick = Image25Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Image35: TImage
+        Left = 204
+        Height = 16
+        Hint = 'Specific to most colorimeters; see “Operation of particular instruments” (instruments.html).'
+        Top = 315
+        Width = 16
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+          25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+          0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+          E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+          7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+          244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+          781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+          408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+          9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+          4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+          B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+          62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+          43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+          E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+          9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+          FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+          D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+          788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+          4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+          892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+          48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+          173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+          0049454E44AE426082
+        }
+        ShowHint = True
+      end
+      object Label104: TLabel
+        AnchorSideLeft.Side = asrBottom
+        Cursor = crHandPoint
+        Left = 225
+        Height = 15
+        Top = 235
+        Width = 44
+        BorderSpacing.Left = 6
+        Caption = 'example'
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label104Click
+      end
+      object Label105: TLabel
+        AnchorSideLeft.Side = asrBottom
+        Cursor = crHandPoint
+        Left = 225
+        Height = 15
+        Top = 441
+        Width = 44
+        BorderSpacing.Left = 6
+        Caption = 'example'
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label105Click
+      end
+      object Image43: TImage
+        Left = 371
+        Height = 16
+        Hint = 'Description is how the profile appears in a list of profile names.'
+        Top = 569
+        Width = 16
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+          25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+          0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+          E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+          7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+          244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+          781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+          408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+          9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+          4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+          B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+          62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+          43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+          E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+          9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+          FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+          D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+          788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+          4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+          892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+          48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+          173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+          0049454E44AE426082
+        }
+        ShowHint = True
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Printer profiling'
+      ClientHeight = 992
+      ClientWidth = 850
+      object Label3: TLabel
+        AnchorSideRight.Control = Image3
+        Left = 21
+        Height = 15
+        Top = 172
+        Width = 144
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Pre-conditioning profile -c:'
+        ParentColor = False
+      end
+      object Image3: TImage
+        Cursor = crHandPoint
+        Left = 171
+        Height = 24
+        Top = 167
+        Width = 24
+        AutoSize = True
+        OnClick = Image3Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Label1: TLabel
+        Left = 12
+        Height = 15
+        Top = 16
+        Width = 173
+        Caption = 'Generate patch values (targen)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label5: TLabel
+        Left = 12
+        Height = 15
+        Top = 288
+        Width = 174
+        Caption = 'Create patch images (printtarg)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label6: TLabel
+        AnchorSideRight.Control = Edit111
+        Left = 40
+        Height = 15
+        Top = 44
+        Width = 155
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Patches - white (default 4) -e:'
+        ParentColor = False
+      end
+      object Label7: TLabel
+        AnchorSideRight.Control = Edit112
+        Left = 92
+        Height = 15
+        Top = 68
+        Width = 103
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'black (default 4) -B:'
+        ParentColor = False
+      end
+      object Label8: TLabel
+        AnchorSideRight.Control = Edit113
+        Left = 16
+        Height = 15
+        Top = 92
+        Width = 179
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'single channel steps (default 0) -s:'
+        ParentColor = False
+      end
+      object Label9: TLabel
+        AnchorSideRight.Control = Edit114
+        Left = 45
+        Height = 15
+        Top = 116
+        Width = 150
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'gray axis steps (default 0) -g:'
+        ParentColor = False
+      end
+      object Label10: TLabel
+        AnchorSideRight.Control = Edit115
+        Left = 12
+        Height = 15
+        Top = 140
+        Width = 183
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'full spread, to total (default 836) -f:'
+        ParentColor = False
+      end
+      object Label11: TLabel
+        AnchorSideRight.Control = ComboBox1
+        Left = 12
+        Height = 15
+        Top = 316
+        Width = 72
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Instrument -i:'
+        ParentColor = False
+      end
+      object Label12: TLabel
+        AnchorSideRight.Control = ComboBox2
+        Left = 18
+        Height = 15
+        Top = 346
+        Width = 66
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Page size -p:'
+        ParentColor = False
+      end
+      object Label14: TLabel
+        AnchorSideRight.Control = ComboBox3
+        Left = 24
+        Height = 15
+        Top = 376
+        Width = 60
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Output file:'
+        ParentColor = False
+      end
+      object Label15: TLabel
+        AnchorSideRight.Control = Edit5
+        Left = 198
+        Height = 15
+        Top = 376
+        Width = 77
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Tiff resolution:'
+        ParentColor = False
+      end
+      object Label16: TLabel
+        Left = 198
+        Height = 15
+        Top = 346
+        Width = 67
+        Caption = 'Custom size:'
+        ParentColor = False
+      end
+      object Label17: TLabel
+        AnchorSideRight.Control = Image4
+        Left = 12
+        Height = 15
+        Top = 408
+        Width = 95
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Calibration file -K:'
+        ParentColor = False
+      end
+      object Image4: TImage
+        Cursor = crHandPoint
+        Left = 113
+        Height = 24
+        Top = 403
+        Width = 24
+        AutoSize = True
+        OnClick = Image4Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Label18: TLabel
+        Left = 12
+        Height = 15
+        Top = 526
+        Width = 161
+        Caption = 'Read the patches (chartread)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label19: TLabel
+        AnchorSideRight.Control = ComboBox4
+        Left = 12
+        Height = 15
+        Top = 554
+        Width = 43
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Filter -F:'
+        ParentColor = False
+      end
+      object Edit115: TEdit
+        Left = 201
+        Height = 23
+        Top = 136
+        Width = 48
+        TabOrder = 0
+      end
+      object Button1: TButton
+        Left = 8
+        Height = 25
+        Top = 230
+        Width = 75
+        Caption = 'Generate'
+        OnClick = Button1Click
+        TabOrder = 1
+      end
+      object Edit12: TEdit
+        Left = 201
+        Height = 23
+        Top = 168
+        Width = 400
+        TabOrder = 2
+      end
+      object Edit13: TEdit
+        Left = 8
+        Height = 23
+        Top = 200
+        Width = 830
+        TabOrder = 6
+      end
+      object ComboBox1: TComboBox
+        Left = 90
+        Height = 23
+        Top = 312
+        Width = 96
+        AutoSelect = False
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'i1Pro'
+          'ColorMunki'
+          'DTP20'
+          'DTP22'
+          'DTP41'
+          'DTP51'
+          'SpectroScan'
+        )
+        OnChange = ComboBox1Change
+        TabOrder = 7
+        Text = 'i1Pro'
+      end
+      object Button3: TButton
+        Left = 8
+        Height = 23
+        Top = 468
+        Width = 75
+        Caption = 'Generate'
+        OnClick = Button3Click
+        TabOrder = 8
+      end
+      object Edit14: TEdit
+        Left = 8
+        Height = 23
+        Top = 436
+        Width = 830
+        TabOrder = 9
+      end
+      object Button2: TButton
+        Left = 90
+        Height = 25
+        Top = 230
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button2Click
+        TabOrder = 10
+      end
+      object Button4: TButton
+        Left = 90
+        Height = 23
+        Top = 468
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button4Click
+        TabOrder = 11
+      end
+      object Edit111: TEdit
+        Left = 201
+        Height = 23
+        Top = 40
+        Width = 48
+        TabOrder = 3
+      end
+      object Edit112: TEdit
+        Left = 201
+        Height = 23
+        Top = 64
+        Width = 48
+        TabOrder = 4
+      end
+      object Edit113: TEdit
+        Left = 201
+        Height = 23
+        Top = 88
+        Width = 48
+        TabOrder = 5
+      end
+      object Edit114: TEdit
+        Left = 201
+        Height = 23
+        Top = 112
+        Width = 48
+        TabOrder = 12
+      end
+      object ComboBox2: TComboBox
+        Left = 90
+        Height = 23
+        Top = 342
+        Width = 96
+        AutoSelect = False
+        DropDownCount = 12
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'Letter'
+          'LetterR'
+          'A4'
+          'A4R'
+          'A3'
+          'A2'
+          'Legal'
+          '4x6'
+          '11x17'
+          '24x11'
+          'Custom:'
+        )
+        OnChange = ComboBox2Change
+        TabOrder = 13
+        Text = 'Letter'
+      end
+      object Panel2: TPanel
+        Left = 276
+        Height = 33
+        Top = 340
+        Width = 257
+        BevelOuter = bvNone
+        ClientHeight = 33
+        ClientWidth = 257
+        TabOrder = 14
+        object Label13: TLabel
+          Left = 66
+          Height = 15
+          Top = 7
+          Width = 5
+          Caption = 'x'
+          ParentColor = False
+        end
+        object Edit3: TEdit
+          Left = 4
+          Height = 23
+          Top = 3
+          Width = 57
+          TabOrder = 0
+        end
+        object Edit4: TEdit
+          Left = 78
+          Height = 23
+          Top = 3
+          Width = 57
+          TabOrder = 1
+        end
+        object Panel1: TPanel
+          Left = 132
+          Height = 33
+          Top = 0
+          Width = 112
+          BevelOuter = bvNone
+          ClientHeight = 33
+          ClientWidth = 112
+          TabOrder = 2
+          object RadioButton1: TRadioButton
+            Left = 6
+            Height = 19
+            Top = 5
+            Width = 54
+            Caption = 'inches'
+            Checked = True
+            TabOrder = 0
+            TabStop = True
+          end
+          object RadioButton2: TRadioButton
+            Left = 64
+            Height = 19
+            Top = 5
+            Width = 42
+            Caption = 'mm'
+            TabOrder = 1
+          end
+        end
+      end
+      object ComboBox3: TComboBox
+        Left = 90
+        Height = 23
+        Top = 372
+        Width = 96
+        AutoSelect = False
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          '16-bit tiff -T'
+          '8-bit tiff -t'
+          'PostScript'
+          'EPS -e'
+        )
+        TabOrder = 15
+        Text = '16-bit tiff -T'
+      end
+      object Edit5: TEdit
+        Left = 281
+        Height = 23
+        Top = 372
+        Width = 48
+        TabOrder = 16
+        Text = '300'
+      end
+      object CheckBox13: TCheckBox
+        Left = 463
+        Height = 19
+        Top = 373
+        Width = 164
+        Caption = 'Don’t randomize patches -r'
+        TabOrder = 17
+      end
+      object Edit6: TEdit
+        Left = 143
+        Height = 23
+        Top = 403
+        Width = 400
+        TabOrder = 18
+      end
+      object Edit15: TEdit
+        Left = 8
+        Height = 23
+        Top = 584
+        Width = 830
+        TabOrder = 19
+      end
+      object Button5: TButton
+        Left = 8
+        Height = 25
+        Top = 614
+        Width = 75
+        Caption = 'Generate'
+        OnClick = Button5Click
+        TabOrder = 20
+      end
+      object Button6: TButton
+        Left = 90
+        Height = 25
+        Top = 614
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button6Click
+        TabOrder = 21
+      end
+      object ComboBox4: TComboBox
+        Left = 61
+        Height = 23
+        Top = 550
+        Width = 96
+        AutoSelect = False
+        ItemHeight = 15
+        Items.Strings = (
+          ''
+          'None'
+          'Polarizing'
+          'D65'
+          'UV cut'
+        )
+        TabOrder = 22
+      end
+      object CheckBox3: TCheckBox
+        Left = 330
+        Height = 19
+        Top = 552
+        Width = 74
+        Caption = 'Resume -r'
+        TabOrder = 23
+      end
+      object CheckBox4: TCheckBox
+        Left = 419
+        Height = 19
+        Top = 552
+        Width = 147
+        Caption = 'Disable bi-directional -B'
+        TabOrder = 24
+      end
+      object CheckBox5: TCheckBox
+        Left = 578
+        Height = 19
+        Top = 552
+        Width = 186
+        Caption = 'High resolution (if available) -H'
+        TabOrder = 25
+      end
+      object CheckBox2: TCheckBox
+        Left = 201
+        Height = 19
+        Top = 552
+        Width = 114
+        Caption = 'Patch by patch -p'
+        TabOrder = 26
+      end
+      object Label20: TLabel
+        Left = 12
+        Height = 15
+        Top = 672
+        Width = 192
+        Caption = 'Create the printer profile (colprof)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label21: TLabel
+        AnchorSideRight.Control = Edit121
+        Left = 12
+        Height = 15
+        Top = 700
+        Width = 91
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Manufacturer -A:'
+        ParentColor = False
+      end
+      object Label22: TLabel
+        AnchorSideRight.Control = Edit122
+        Left = 47
+        Height = 15
+        Top = 724
+        Width = 56
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Model -M:'
+        ParentColor = False
+      end
+      object Label23: TLabel
+        AnchorSideRight.Control = Edit123
+        Left = 24
+        Height = 15
+        Top = 748
+        Width = 79
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Description -D:'
+        ParentColor = False
+      end
+      object Label24: TLabel
+        AnchorSideRight.Control = Edit124
+        Left = 31
+        Height = 15
+        Top = 772
+        Width = 72
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Copyright -C:'
+        ParentColor = False
+      end
+      object Edit121: TEdit
+        Left = 109
+        Height = 23
+        Top = 696
+        Width = 256
+        TabOrder = 27
+      end
+      object Edit122: TEdit
+        Left = 109
+        Height = 23
+        Top = 720
+        Width = 256
+        TabOrder = 28
+      end
+      object Edit123: TEdit
+        Left = 109
+        Height = 23
+        Top = 744
+        Width = 256
+        TabOrder = 29
+      end
+      object Edit124: TEdit
+        Left = 109
+        Height = 23
+        Top = 768
+        Width = 256
+        TabOrder = 30
+      end
+      object ComboBox5: TComboBox
+        Left = 109
+        Height = 23
+        Top = 800
+        Width = 148
+        AutoSelect = False
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'Perceptual'
+          'Relative colorimetric'
+          'Saturation'
+          'Absolute colorimetric'
+        )
+        TabOrder = 31
+        Text = 'Perceptual'
+      end
+      object Label25: TLabel
+        AnchorSideRight.Control = ComboBox5
+        Left = 13
+        Height = 15
+        Top = 804
+        Width = 90
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Default intent -Z:'
+        ParentColor = False
+      end
+      object Label26: TLabel
+        AnchorSideRight.Control = ComboBox6
+        Left = 35
+        Height = 15
+        Top = 834
+        Width = 68
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Illuminant -i:'
+        ParentColor = False
+      end
+      object ComboBox6: TComboBox
+        Left = 109
+        Height = 23
+        Top = 830
+        Width = 96
+        AutoSelect = False
+        DropDownCount = 9
+        ItemHeight = 15
+        ItemIndex = 2
+        Items.Strings = (
+          'A'
+          'C'
+          'D50'
+          'D50M2'
+          'D65'
+          'F5'
+          'F8'
+          'F10'
+          'Custom:'
+        )
+        OnChange = ComboBox6Change
+        TabOrder = 32
+        Text = 'D50'
+      end
+      object Label27: TLabel
+        AnchorSideRight.Control = ComboBox7
+        Left = 29
+        Height = 15
+        Top = 864
+        Width = 74
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'FWA comp -f:'
+        ParentColor = False
+      end
+      object ComboBox7: TComboBox
+        Left = 109
+        Height = 23
+        Top = 860
+        Width = 96
+        AutoSelect = False
+        DropDownCount = 13
+        ItemHeight = 15
+        Items.Strings = (
+          ''
+          'M0'
+          'M1'
+          'M2'
+          'A'
+          'C'
+          'D50'
+          'D50M2'
+          'D65'
+          'F5'
+          'F8'
+          'F10'
+          'Custom:'
+        )
+        OnChange = ComboBox7Change
+        TabOrder = 33
+      end
+      object Label28: TLabel
+        AnchorSideRight.Control = Image5
+        Left = 218
+        Height = 15
+        Top = 849
+        Width = 117
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Custom spectrum file:'
+        ParentColor = False
+      end
+      object Image5: TImage
+        Cursor = crHandPoint
+        Left = 341
+        Height = 24
+        Top = 847
+        Width = 24
+        AutoSize = True
+        OnClick = Image5Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Edit7: TEdit
+        Left = 371
+        Height = 23
+        Top = 845
+        Width = 400
+        TabOrder = 34
+      end
+      object Label29: TLabel
+        AnchorSideRight.Control = Image6
+        Left = 12
+        Height = 15
+        Top = 896
+        Width = 141
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Gamut mapping profile -S:'
+        ParentColor = False
+      end
+      object Edit8: TEdit
+        Left = 189
+        Height = 23
+        Top = 892
+        Width = 400
+        TabOrder = 35
+      end
+      object Image6: TImage
+        Cursor = crHandPoint
+        Left = 159
+        Height = 24
+        Top = 891
+        Width = 24
+        AutoSize = True
+        OnClick = Image6Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Label30: TLabel
+        Left = 410
+        Height = 15
+        Top = 724
+        Width = 222
+        Caption = 'Override output file name && extension -O:'
+        ParentColor = False
+      end
+      object Edit9: TEdit
+        Left = 410
+        Height = 23
+        Top = 744
+        Width = 285
+        TabOrder = 36
+      end
+      object Edit16: TEdit
+        Left = 8
+        Height = 23
+        Top = 924
+        Width = 830
+        TabOrder = 37
+      end
+      object Button7: TButton
+        Left = 8
+        Height = 25
+        Top = 954
+        Width = 75
+        Caption = 'Generate'
+        OnClick = Button7Click
+        TabOrder = 38
+      end
+      object Button8: TButton
+        Left = 90
+        Height = 25
+        Top = 954
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button8Click
+        TabOrder = 39
+      end
+      object Label31: TLabel
+        Left = 356
+        Height = 15
+        Top = 316
+        Width = 92
+        Caption = 'patches per sheet'
+        ParentColor = False
+      end
+      object CheckBox12: TCheckBox
+        Left = 353
+        Height = 19
+        Top = 373
+        Width = 96
+        Caption = 'Dither 8-bit -D'
+        TabOrder = 40
+      end
+      object CheckBox11: TCheckBox
+        Left = 198
+        Height = 19
+        Top = 314
+        Width = 140
+        Caption = 'Double / Hexagonal -h'
+        OnChange = CheckBox11Change
+        TabOrder = 41
+      end
+      object Image26: TImage
+        Cursor = crHandPoint
+        Left = 178
+        Height = 16
+        Top = 234
+        Width = 16
+        AutoSize = True
+        OnClick = Image26Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Image27: TImage
+        Cursor = crHandPoint
+        Left = 178
+        Height = 16
+        Top = 471
+        Width = 16
+        AutoSize = True
+        OnClick = Image27Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Image28: TImage
+        Cursor = crHandPoint
+        Left = 178
+        Height = 16
+        Top = 618
+        Width = 16
+        AutoSize = True
+        OnClick = Image28Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Image29: TImage
+        Cursor = crHandPoint
+        Left = 178
+        Height = 16
+        Top = 958
+        Width = 16
+        AutoSize = True
+        OnClick = Image29Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Label93: TLabel
+        AnchorSideLeft.Side = asrBottom
+        Cursor = crHandPoint
+        Left = 281
+        Height = 15
+        Top = 235
+        Width = 45
+        BorderSpacing.Left = 6
+        Caption = 'profiling'
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label93Click
+      end
+      object Label94: TLabel
+        AnchorSideLeft.Side = asrBottom
+        Cursor = crHandPoint
+        Left = 337
+        Height = 15
+        Top = 235
+        Width = 56
+        BorderSpacing.Left = 6
+        Caption = 'calibration'
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label94Click
+      end
+      object Image40: TImage
+        Left = 164
+        Height = 16
+        Hint = 'Applies to some instruments.'
+        Top = 553
+        Width = 16
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+          25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+          0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+          E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+          7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+          244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+          781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+          408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+          9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+          4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+          B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+          62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+          43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+          E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+          9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+          FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+          D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+          788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+          4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+          892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+          48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+          173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+          0049454E44AE426082
+        }
+        ShowHint = True
+      end
+      object Label106: TLabel
+        AnchorSideLeft.Side = asrBottom
+        Cursor = crHandPoint
+        Left = 225
+        Height = 15
+        Top = 959
+        Width = 44
+        BorderSpacing.Left = 6
+        Caption = 'example'
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label106Click
+      end
+      object Label44: TLabel
+        Left = 225
+        Height = 15
+        Top = 235
+        Width = 52
+        Caption = 'examples:'
+        ParentColor = False
+      end
+      object Label84: TLabel
+        Left = 330
+        Height = 15
+        Top = 235
+        Width = 3
+        Caption = '|'
+        ParentColor = False
+      end
+      object Image44: TImage
+        Left = 371
+        Height = 16
+        Hint = 'Description is how the profile appears in a list of profile names.'
+        Top = 747
+        Width = 16
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+          25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+          0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+          E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+          7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+          244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+          781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+          408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+          9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+          4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+          B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+          62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+          43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+          E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+          9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+          FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+          D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+          788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+          4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+          892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+          48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+          173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+          0049454E44AE426082
+        }
+        ShowHint = True
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Printer calibration'
+      ClientHeight = 992
+      ClientWidth = 850
+      ImageIndex = 1
+      object Label32: TLabel
+        Left = 12
+        Height = 15
+        Top = 16
+        Width = 252
+        Caption = 'Create a linearization calibration file (printcal)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Panel3: TPanel
+        Left = 8
+        Height = 32
+        Top = 86
+        Width = 386
+        BevelOuter = bvNone
+        ClientHeight = 32
+        ClientWidth = 386
+        TabOrder = 0
+        object RadioButton3: TRadioButton
+          Left = 6
+          Height = 19
+          Top = 5
+          Width = 60
+          Caption = 'Initial -i'
+          Checked = True
+          TabOrder = 0
+          TabStop = True
+        end
+        object RadioButton4: TRadioButton
+          Left = 76
+          Height = 19
+          Top = 5
+          Width = 79
+          Caption = 'Imitation -I'
+          TabOrder = 1
+        end
+        object RadioButton5: TRadioButton
+          Left = 167
+          Height = 19
+          Top = 5
+          Width = 101
+          Caption = 'Recalibration -r'
+          OnChange = RadioButton5Change
+          TabOrder = 2
+        end
+        object RadioButton9: TRadioButton
+          Left = 279
+          Height = 19
+          Top = 5
+          Width = 94
+          Caption = 'Verification -e'
+          OnChange = RadioButton9Change
+          TabOrder = 3
+        end
+      end
+      object Label33: TLabel
+        Left = 12
+        Height = 15
+        Top = 62
+        Width = 361
+        Caption = 'Consider a modified base name for this process such as MyPrinter_c.'
+        ParentColor = False
+      end
+      object Label34: TLabel
+        AnchorSideRight.Control = Edit125
+        Left = 12
+        Height = 15
+        Top = 128
+        Width = 91
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Manufacturer -A:'
+        ParentColor = False
+      end
+      object Label35: TLabel
+        AnchorSideRight.Control = Edit126
+        Left = 47
+        Height = 15
+        Top = 152
+        Width = 56
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Model -M:'
+        ParentColor = False
+      end
+      object Label36: TLabel
+        AnchorSideRight.Control = Edit127
+        Left = 24
+        Height = 15
+        Top = 176
+        Width = 79
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Description -D:'
+        ParentColor = False
+      end
+      object Label37: TLabel
+        AnchorSideRight.Control = Edit128
+        Left = 31
+        Height = 15
+        Top = 200
+        Width = 72
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Copyright -C:'
+        ParentColor = False
+      end
+      object Edit125: TEdit
+        Left = 109
+        Height = 23
+        Top = 124
+        Width = 256
+        TabOrder = 1
+      end
+      object Edit126: TEdit
+        Left = 109
+        Height = 23
+        Top = 148
+        Width = 256
+        TabOrder = 2
+      end
+      object Edit127: TEdit
+        Left = 109
+        Height = 23
+        Top = 172
+        Width = 256
+        TabOrder = 3
+        Text = 'calibrated'
+      end
+      object Edit128: TEdit
+        Left = 109
+        Height = 23
+        Top = 196
+        Width = 256
+        TabOrder = 4
+      end
+      object Image7: TImage
+        Cursor = crHandPoint
+        Left = 86
+        Height = 16
+        Top = 224
+        Width = 16
+        AutoSize = True
+        OnClick = Image7Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869632F02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000001
+          F649444154785E9DD34B6813511406E07F1E77260F336912C569223E52B0C948
+          A10AB68805BB508A2F1022088AE8C295500A0AC1882EAA42C485082E8C0B1F51
+          712106448B520B6AC445535F3BA195E28BB46A6C861643B153721D2FC330355A
+          6DCFE66CCEFF71E19C0B4A29FE55CFAEE2AF43BCD5FF0B797C090BE70DB42672
+          20024AC75324302B70ECA8E4EDCB466EF45D59F4FA5136346A3F7FFC08433A1A
+          8DB285D402A6BE64535C19E0F0A3B96DF3AEF8BA8E3D6ACBD62EB46C3B0C4A0D
+          18E5533588E808AFD9A82977A3AB9AC2A1FA1857191FC0E4F7F7509410442261
+          DA7043923918632718825CA28C14F18A56D8D31E0B64966B5AC4EDAD60A2D4C3
+          504264586586DDACF3BCE0442A0CD8D058977779485350D5F0ED53166E4FD00E
+          168B6F6D64E9B218444102F16D412197C0C3411264802048F195AB77CAC5E10C
+          644980DFFB19BCEF000302AAB52EC187776FCE62857608857B69F49AE1936943
+          6700C75151764D41965DF0ABFBF0B2FF3C307961E61AB727ADF0193BCC644A29
+          F2D7EBA9FE31492B239DD45C5BA1F7227698BDD97944C65892FEEACE15DAC0D3
+          6B013A317ABADA7F9BA7F9CB08FFE90A9DE75C033CB9D9A07F19DA5B7D7E4BA9
+          CEF72F9CD34B23A80BAFAD9AC3D1DF81B6FDE06605DA770F777FFDF0EA8E7F71
+          C37D00EB3187E26D694A3F38F4A2E70195D40573017E02E488C147350BA17800
+          00000049454E44AE426082
+        }
+      end
+      object Label39: TLabel
+        AnchorSideRight.Control = Edit116
+        Left = 432
+        Height = 15
+        Top = 128
+        Width = 168
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Override maximum device % -x:'
+        ParentColor = False
+      end
+      object Label40: TLabel
+        AnchorSideRight.Control = Edit117
+        Left = 444
+        Height = 15
+        Top = 152
+        Width = 156
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Scale maximum device % -m:'
+        ParentColor = False
+      end
+      object Label41: TLabel
+        AnchorSideRight.Control = Edit118
+        Left = 446
+        Height = 15
+        Top = 176
+        Width = 154
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Override minimum deltaE -n:'
+        ParentColor = False
+      end
+      object Label42: TLabel
+        AnchorSideRight.Control = Edit119
+        Left = 472
+        Height = 15
+        Top = 200
+        Width = 128
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Set midpoint curve % -t:'
+        ParentColor = False
+      end
+      object Edit116: TEdit
+        Left = 606
+        Height = 23
+        Top = 124
+        Width = 49
+        TabOrder = 5
+      end
+      object Edit117: TEdit
+        Left = 606
+        Height = 23
+        Top = 148
+        Width = 49
+        TabOrder = 6
+      end
+      object Edit118: TEdit
+        Left = 606
+        Height = 23
+        Top = 172
+        Width = 49
+        TabOrder = 7
+      end
+      object Edit119: TEdit
+        Left = 606
+        Height = 23
+        Top = 196
+        Width = 49
+        TabOrder = 8
+      end
+      object Label43: TLabel
+        AnchorSideRight.Control = Image8
+        Left = 12
+        Height = 15
+        Top = 258
+        Width = 162
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Base name of previous .cal file:'
+        ParentColor = False
+      end
+      object Image8: TImage
+        Cursor = crHandPoint
+        Left = 180
+        Height = 24
+        Top = 254
+        Width = 24
+        AutoSize = True
+        OnClick = Image8Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Edit17: TEdit
+        Left = 210
+        Height = 23
+        Top = 254
+        Width = 400
+        TabOrder = 9
+      end
+      object Edit18: TEdit
+        Left = 8
+        Height = 23
+        Top = 286
+        Width = 830
+        TabOrder = 10
+      end
+      object Button9: TButton
+        Left = 8
+        Height = 25
+        Top = 316
+        Width = 75
+        Caption = 'Generate'
+        OnClick = Button9Click
+        TabOrder = 11
+      end
+      object Button10: TButton
+        Left = 90
+        Height = 25
+        Top = 316
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button10Click
+        TabOrder = 12
+      end
+      object Label45: TLabel
+        Left = 8
+        Height = 15
+        Top = 402
+        Width = 261
+        Caption = 'Apply the calibration to an .icc profile (applycal)'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Panel4: TPanel
+        Left = 3
+        Height = 32
+        Top = 424
+        Width = 293
+        BevelOuter = bvNone
+        ClientHeight = 32
+        ClientWidth = 293
+        TabOrder = 13
+        object RadioButton6: TRadioButton
+          Left = 6
+          Height = 19
+          Top = 5
+          Width = 109
+          Caption = 'Apply/reapply -a'
+          Checked = True
+          OnChange = RadioButton6Change
+          TabOrder = 0
+          TabStop = True
+        end
+        object RadioButton7: TRadioButton
+          Left = 124
+          Height = 19
+          Top = 5
+          Width = 78
+          Caption = 'Remove -u'
+          OnChange = RadioButton7Change
+          TabOrder = 1
+        end
+        object RadioButton8: TRadioButton
+          Left = 212
+          Height = 19
+          Top = 5
+          Width = 67
+          Caption = 'Check -c'
+          OnChange = RadioButton8Change
+          TabOrder = 2
+        end
+      end
+      object Label46: TLabel
+        AnchorSideRight.Control = Image9
+        Left = 74
+        Height = 15
+        Top = 464
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Calibration file:'
+        ParentColor = False
+      end
+      object Image9: TImage
+        Cursor = crHandPoint
+        Left = 160
+        Height = 24
+        Top = 460
+        Width = 24
+        AutoSize = True
+        OnClick = Image9Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Edit21: TEdit
+        Left = 190
+        Height = 23
+        Top = 460
+        Width = 400
+        TabOrder = 14
+      end
+      object Label47: TLabel
+        AnchorSideRight.Control = Image10
+        Left = 78
+        Height = 15
+        Top = 494
+        Width = 76
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Source profile:'
+        ParentColor = False
+      end
+      object Image10: TImage
+        Cursor = crHandPoint
+        Left = 160
+        Height = 24
+        Top = 490
+        Width = 24
+        AutoSize = True
+        OnClick = Image10Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869635602000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1D49444154785EB5D63B68144118C0F1FFB733B933D11CF1D10589425A2576C6
+          4A83A4D646C14723283E10C12AD8481A390505113D906895C258884D0A8349B4
+          521B4502A2A2E194A049204ACEC4CB3D763ED7018B7335DC86DC0F966F9B9D3F
+          D3CCACA82A8D24A3A3E33A3232C16AEAEDDD464FCF6E01B0D1E21C3C718C95D8
+          F1EC21AFBAF7C5E6D0EDBB44017C00E0C5BB05923AF9ED31FD4706B838486C0E
+          0163634F348A880F4CE41749EA0CDDDC1C8C66213E5B19E60F1F68FD34CC4AF4
+          01D162B109D406B2D9B3ACA6BEBE1B35012F9FFFC0FF5CB85F200E2E1DC8F0B7
+          C9C9A9D80EEA72FD7417004E954AE8B006CEE7267C643901753281F071CEF17E
+          36E4F554857569CBAE9D1D7E77AB12B001B458A12515D0D662793EB9C4FEED19
+          84E5596A51797098B81C82604D00A238A790361863D08401AFF3DC536A5C7D83
+          0304C508A46C80A82222A8260F78E5E91C61753D22ADC056046832014EF191C0
+          41B305554D1E08CBF37C7FFB99D2CC386B3BF7D26FAF30730B4F00E31F281E7F
+          849683E481A9991F6CD993050D511CCDEDCD98009C1A4050842FF772A4820CD6
+          B8E4818ECDED94A60700051C8BC5807215168A214BD14BB154661370EADA4BD2
+          4D2679405D1504D0105C854CBA02A9121B9BE6706101ADCEF315C81E6D03481E
+          087FCEE22A169C43D5E0A74BA16106DC1AD46D009F606581FC9D43A080F06F0A
+          0875B1B143AAEB3275F3DFD411F0C76B83D8E82E90DFD71B0DD2F0DF965F623B
+          E29ADC48A1880000000049454E44AE426082
+        }
+      end
+      object Edit22: TEdit
+        Left = 190
+        Height = 23
+        Top = 490
+        Width = 400
+        TabOrder = 15
+      end
+      object Label48: TLabel
+        AnchorSideRight.Control = Image11
+        Left = 54
+        Height = 15
+        Top = 524
+        Width = 100
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Destination profile:'
+        ParentColor = False
+      end
+      object Image11: TImage
+        Cursor = crHandPoint
+        Left = 160
+        Height = 24
+        Top = 520
+        Width = 24
+        AutoSize = True
+        OnClick = Image11Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963A402000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          6B49444154785EB5964B48156F18879F998E78414183AE680511B5510A2138C5
+          1F8F2EDCB489362214444404918B68618BFA1348482854D2C62288DC088205B9
+          118FB548BA2D927413899DC86E145AC7CB39672EDFDBCC371087230D8C781EE6
+          E30703F33EDF3BEF30338688504C8C64F2898C8E4EB19EB4B6D6D3D292300062
+          7EF1B633A7580B079E3FE44DFCE8AA1CECBFE70BD0028097EF9688CAD9F931AE
+          1EBFCBFF03ACCA41607CFCA9F85D68C1546A99A89C23CEED012FD3ABB38A1102
+          400BAA3E8EB0163A41172B4C4DBEA0BBFB3CEB4967675FBE2020959AD1F9E243
+          29DF16B24CCEFC62E6F3124A14AE1210D8601A98DE125154969770A97D1FBBAA
+          17C96776768E7C4C0A487D5FA6A5B1960B6DF58CF52648F634337ABD99C7D79A
+          48F63633D693E0515782FE8B71869E7D61FA6B1905840AF4CE11187E954644E8
+          E87B8D520246B07BCB1132B6C2768563FFEDE0E6F0FB6882B91F196C2528A548
+          AFB89886A18B95979A64728AF945979CADB4F467DAE6F762369A40DF73114420
+          E708974FEEA72466E21DAC780247F9C541106CC7D5F308234601AE12940B88D0
+          757F12D3400B0C206BB9087FE170C33610892640822E9472D9B4653B06020220
+          54B80A1141F94B296CDB81881D6872565008043000D19D89168B968B974B2B96
+          974E5441500C812BED7584716B683AF20CF453E30643E4C6C469FE4547FC0E96
+          E3449F010628257E70A8F60461B8B6022276B075631919CBA571773907773611
+          46D6B2A9AE2C8D26686AD8CCC4E427DECE2ED0FD201B0C5B14E22F153C3588E8
+          F3551531F6D4D5840B0A5F520D35C13AB2D7042A0823EFDA50817EBD168B98F7
+          2D30FCCF1B45A2E8BF2D7F0019D65994EE62F95F0000000049454E44AE426082
+        }
+      end
+      object Edit23: TEdit
+        Left = 190
+        Height = 23
+        Top = 520
+        Width = 400
+        TabOrder = 16
+      end
+      object Edit20: TEdit
+        Left = 8
+        Height = 23
+        Top = 552
+        Width = 830
+        TabOrder = 17
+      end
+      object Button11: TButton
+        Left = 8
+        Height = 25
+        Top = 582
+        Width = 75
+        Caption = 'Generate'
+        OnClick = Button11Click
+        TabOrder = 18
+      end
+      object Button12: TButton
+        Left = 90
+        Height = 25
+        Top = 582
+        Width = 75
+        Caption = 'Run'
+        OnClick = Button12Click
+        TabOrder = 19
+      end
+      object Label49: TLabel
+        Left = 12
+        Height = 15
+        Top = 44
+        Width = 382
+        Caption = 'First, generate and read calibration patches (targen, printtarg, chartread).'
+        ParentColor = False
+      end
+      object Label50: TLabel
+        Left = 8
+        Height = 15
+        Top = 374
+        Width = 328
+        Caption = 'Use the resulting .cal file with printtarg during profiling.  Then:'
+        ParentColor = False
+      end
+      object Image30: TImage
+        Cursor = crHandPoint
+        Left = 178
+        Height = 16
+        Top = 320
+        Width = 16
+        AutoSize = True
+        OnClick = Image30Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Image31: TImage
+        Cursor = crHandPoint
+        Left = 178
+        Height = 16
+        Top = 586
+        Width = 16
+        AutoSize = True
+        OnClick = Image31Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+          8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+          107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+          860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+          7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+          4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+          27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+          4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+          D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+          E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+          11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+          0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+          51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+          B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+          70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+          B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+          F02FB76E00861030655A0000000049454E44AE426082
+        }
+      end
+      object Label95: TLabel
+        Cursor = crHandPoint
+        Left = 108
+        Height = 15
+        Top = 227
+        Width = 132
+        Caption = 'Copy from printer profile'
+        Font.Style = [fsUnderline]
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label95Click
+      end
+      object Image41: TImage
+        Left = 664
+        Height = 16
+        Hint = 'These may be set per-channel.'
+        Top = 127
+        Width = 16
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+          25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+          0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+          E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+          7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+          244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+          781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+          408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+          9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+          4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+          B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+          62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+          43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+          E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+          9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+          FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+          D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+          788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+          4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+          892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+          48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+          173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+          0049454E44AE426082
+        }
+        ShowHint = True
+      end
+      object CheckBox9: TCheckBox
+        Left = 432
+        Height = 19
+        Top = 91
+        Width = 95
+        Caption = 'Plot graphs -p'
+        TabOrder = 20
+      end
+      object Image45: TImage
+        Left = 371
+        Height = 16
+        Hint = 'This description (or the file name and path if blank)'#13#10'is appended to the display name of the color profile.'
+        Top = 175
+        Width = 16
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+          25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+          0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+          E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+          7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+          244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+          781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+          408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+          9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+          4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+          B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+          62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+          43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+          E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+          9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+          FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+          D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+          788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+          4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+          892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+          48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+          173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+          0049454E44AE426082
+        }
+        ShowHint = True
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Setup'
+      ClientHeight = 992
+      ClientWidth = 850
+      object Label4: TLabel
+        AnchorSideRight.Control = Image1
+        Left = 24
+        Height = 15
+        Top = 30
+        Width = 97
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Path to Argyll\bin:'
+        ParentColor = False
+        ParentShowHint = False
+      end
+      object Image1: TImage
+        Cursor = crHandPoint
+        Left = 127
+        Height = 24
+        Top = 25
+        Width = 24
+        AutoSize = True
+        OnClick = Image1Click
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869634E02000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+          1549444154785EB5964D48146118C77FB3AEB51EC608244ABA98045D3A784BBA
+          888174EBE3D2C14E1221845D5B088C3A7989A08828443A08E1AD8B50A2665DAA
+          D3429E02D9B6E8B0ABABAEFBA13B5FEFD3FBD2122BB3C48CB83FF8F31FE6F0FC
+          781878DFB1448476622D2D7D908585550E939191F30C0F0F59004933FCC6ED31
+          0EC2C0E7B76406AF867AEED58C116048027CFD5E252EE35B8B3CBC39CD835942
+          3D072C2FAF88D9C20858CDD588CB1D06793EABBB1C6E9B791A6004D83FE73908
+          6930C3420DEC174C4D4D7098A4D3CFF60B0CB9DC1A874136FB3BBC41333D4E96
+          FCBB47B42279E53531090BCCF0FEBB9FB02C0B0440403FFBF522B997D76845EF
+          E813D6ABC7A3090C281727FF82C0ED8044B796D9A47A2FD13FF11E440005A283
+          6075D8AC3D1D32DB4517881604EE11DD82DAFB85572B505D5FA133750AC403E5
+          22E2033EF6B97B34882E50FE1EEE2E885BC3AB94812ECA992F40263460F3E3F5
+          F88264D7098A8B6F68A67BE002C7CEF621C10EE29B9491A04AEAF47D7E4CDF8A
+          2790A04EDFD863334CA782F82594B78D72F3E0971AEF8DA006E2F03F122D05CA
+          47791B28D7A46082781B3A05F35EA7F82F227E7C814580F85B3A9B885734DDC8
+          B64EA9910A12EC022AFE3708EA3BF8B51412D8887482B2417A90C0015C24F1B7
+          AD4480729C7882939727C9CD8C129D6FF45C1CA71455503C7A26F691508AB281
+          39A4DA41B2E9786D8F40DF0596B9DE68136DFF6DF903DC772D1F386C882F0000
+          000049454E44AE426082
+        }
+      end
+      object Edit0: TEdit
+        Tag = -1
+        Left = 156
+        Height = 23
+        Top = 26
+        Width = 400
+        TabOrder = 0
+      end
+      object Label75: TLabel
+        AnchorSideRight.Control = Edit10
+        Left = 24
+        Height = 15
+        Top = 78
+        Width = 126
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Your terminal emulator:'
+        ParentColor = False
+      end
+      object Edit10: TEdit
+        Tag = -1
+        Left = 156
+        Height = 23
+        Top = 74
+        Width = 400
+        TabOrder = 1
+      end
+      object Label90: TLabel
+        Left = 24
+        Height = 15
+        Top = 102
+        Width = 331
+        Anchors = [akTop, akRight]
+        Caption = '(mate-terminal, gnome-terminal, xfce4-terminal, konsole, etc.)'
+        ParentColor = False
+      end
+      object Panel5: TPanel
+        Left = 8
+        Height = 198
+        Top = 146
+        Width = 525
+        BevelOuter = bvNone
+        ClientHeight = 198
+        ClientWidth = 525
+        TabOrder = 2
+        object Label91: TLabel
+          AnchorSideRight.Control = SpinEdit1
+          Left = 16
+          Height = 15
+          Top = 12
+          Width = 64
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 6
+          Caption = 'Font height:'
+          ParentColor = False
+        end
+        object SpinEdit1: TSpinEdit
+          Left = 86
+          Height = 23
+          Top = 8
+          Width = 50
+          MinValue = -99
+          OnChange = SpinEdit1Change
+          TabOrder = 0
+        end
+        object Label98: TLabel
+          AnchorSideRight.Control = Image38
+          Cursor = crHandPoint
+          Left = 149
+          Height = 15
+          Top = 12
+          Width = 28
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 6
+          Caption = 'Reset'
+          Font.Style = [fsUnderline]
+          ParentColor = False
+          ParentFont = False
+          OnClick = Label98Click
+        end
+        object Image38: TImage
+          Left = 183
+          Height = 16
+          Hint = 'Zero resets the font to the system default height.'#13#10'Click “Reset” again for the original font height.'
+          Top = 11
+          Width = 16
+          AutoSize = True
+          ParentShowHint = False
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+            0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+            B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+            25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+            0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+            E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+            7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+            244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+            781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+            408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+            9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+            4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+            B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+            62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+            43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+            E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+            9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+            FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+            D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+            788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+            4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+            892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+            48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+            173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+            0049454E44AE426082
+          }
+          ShowHint = True
+        end
+        object Label96: TLabel
+          AnchorSideRight.Control = Image37
+          Left = 16
+          Height = 15
+          Top = 140
+          Width = 422
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 6
+          Caption = 'More help for some items is available by hovering the mouse over the help icon:'
+          ParentColor = False
+        end
+        object Image37: TImage
+          Left = 444
+          Height = 16
+          Hint = 'like this.'
+          Top = 138
+          Width = 16
+          AutoSize = True
+          ParentShowHint = False
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+            0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+            B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+            25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+            0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+            E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+            7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+            244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+            781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+            408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+            9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+            4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+            B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+            62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+            43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+            E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+            9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+            FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+            D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+            788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+            4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+            892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+            48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+            173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+            0049454E44AE426082
+          }
+          ShowHint = True
+        end
+        object Label97: TLabel
+          AnchorSideTop.Control = Label92
+          AnchorSideRight.Control = Label92
+          AnchorSideBottom.Control = Label92
+          Left = 16
+          Height = 15
+          Top = 158
+          Width = 57
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 4
+          Caption = 'Please visit'
+          ParentColor = False
+        end
+        object Label92: TLabel
+          Cursor = crHandPoint
+          Left = 77
+          Height = 15
+          Top = 158
+          Width = 97
+          Caption = 'russellcottrell.com'
+          Font.Style = [fsUnderline]
+          ParentColor = False
+          ParentFont = False
+          OnClick = Label92Click
+        end
+        object Label99: TLabel
+          AnchorSideRight.Control = Image39
+          Left = 16
+          Height = 15
+          Top = 76
+          Width = 312
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 6
+          Caption = 'Click on the copy icon to copy the adjacent command line:'
+          ParentColor = False
+        end
+        object Image39: TImage
+          Cursor = crHandPoint
+          Left = 334
+          Height = 16
+          Top = 75
+          Width = 16
+          AutoSize = True
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+            0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+            0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+            8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+            107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+            860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+            7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+            4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+            27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+            4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+            D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+            E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+            11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+            0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+            51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+            B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+            70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+            B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+            F02FB76E00861030655A0000000049454E44AE426082
+          }
+        end
+        object Label100: TLabel
+          Left = 16
+          Height = 15
+          Top = 58
+          Width = 301
+          Anchors = [akTop, akRight]
+          Caption = 'The fields with reversed colors are actual command lines.'
+          ParentColor = False
+        end
+        object Label101: TLabel
+          Cursor = crHandPoint
+          Left = 16
+          Height = 15
+          Top = 122
+          Width = 25
+          Anchors = [akTop, akRight]
+          Caption = 'Help'
+          Font.Style = [fsUnderline]
+          ParentColor = False
+          ParentFont = False
+          OnClick = Label101Click
+        end
+      end
+      object Image42: TImage
+        Left = 564
+        Height = 16
+        Hint = 'Optional alternative to setting the %PATH% environment variable.'
+        Top = 29
+        Width = 16
+        AutoSize = True
+        ParentShowHint = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+          0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+          B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+          25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+          0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+          E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+          7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+          244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+          781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+          408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+          9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+          4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+          B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+          62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+          43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+          E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+          9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+          FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+          D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+          788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+          4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+          892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+          48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+          173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+          0049454E44AE426082
+        }
+        ShowHint = True
+      end
+    end
+  end
+  object Label2: TLabel
+    AnchorSideRight.Control = Image2
+    Left = 17
+    Height = 15
+    Top = 28
+    Width = 145
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 6
+    Caption = 'Working folder, base name:'
+    ParentColor = False
+  end
+  object Image2: TImage
+    Cursor = crHandPoint
+    Left = 168
+    Height = 24
+    Top = 24
+    Width = 24
+    AutoSize = True
+    OnClick = Image2Click
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B47726170686963A402000089504E47
+      0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000002
+      6B49444154785EB5964B48156F18879F998E78414183AE680511B5510A2138C5
+      1F8F2EDCB489362214444404918B68618BFA1348482854D2C62288DC088205B9
+      118FB548BA2D927413899DC86E145AC7CB39672EDFDBCC371087230D8C781EE6
+      E30703F33EDF3BEF30338688504C8C64F2898C8E4EB19EB4B6D6D3D292300062
+      7EF1B633A7580B079E3FE44DFCE8AA1CECBFE70BD0028097EF9688CAD9F931AE
+      1EBFCBFF03ACCA41607CFCA9F85D68C1546A99A89C23CEED012FD3ABB38A1102
+      400BAA3E8EB0163A41172B4C4DBEA0BBFB3CEB4967675FBE2020959AD1F9E243
+      29DF16B24CCEFC62E6F3124A14AE1210D8601A98DE125154969770A97D1FBBAA
+      17C96776768E7C4C0A487D5FA6A5B1960B6DF58CF52648F634337ABD99C7D79A
+      48F63633D693E0515782FE8B71869E7D61FA6B1905840AF4CE11187E954644E8
+      E87B8D520246B07BCB1132B6C2768563FFEDE0E6F0FB6882B91F196C2528A548
+      AFB89886A18B95979A64728AF945979CADB4F467DAE6F762369A40DF73114420
+      E708974FEEA72466E21DAC780247F9C541106CC7D5F308234601AE12940B88D0
+      757F12D3400B0C206BB9087FE170C33610892640822E9472D9B4653B06020220
+      54B80A1141F94B296CDB81881D6872565008043000D19D89168B968B974B2B96
+      974E5441500C812BED7584716B683AF20CF453E30643E4C6C469FE4547FC0E96
+      E3449F010628257E70A8F60461B8B6022276B075631919CBA571773907773611
+      46D6B2A9AE2C8D26686AD8CCC4E427DECE2ED0FD201B0C5B14E22F153C3588E8
+      F3551531F6D4D5840B0A5F520D35C13AB2D7042A0823EFDA50817EBD168B98F7
+      2D30FCCF1B45A2E8BF2D7F0019D65994EE62F95F0000000049454E44AE426082
+    }
+  end
+  object Edit1: TEdit
+    Tag = -1
+    Left = 200
+    Height = 23
+    Top = 25
+    Width = 420
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Tag = -1
+    Left = 652
+    Height = 23
+    Top = 25
+    Width = 186
+    TabOrder = 1
+  end
+  object Image20: TImage
+    Cursor = crHandPoint
+    Left = 628
+    Height = 16
+    Top = 28
+    Width = 16
+    AutoSize = True
+    OnClick = Image20Click
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869633A02000089504E47
+      0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+      0149444154785E7DD03F6853511886F1E73BE7244D1BDA44412D8A8360DB499C
+      8A0E55D1A5833AE95210EC288A8E824E2A5A07771107A1E0A47337915205B158
+      107112E9D256A4855863FEDDDC73CFE70DDEA1D05C1F78D777F8C9F49D0FAF46
+      860B478DA1AA680282A812796DD65BDD17DD5AEDF9BB67173BE424971F2D7F7E
+      7D77B2BCD9085680A04A9C049C85F98FDBAC2C6FBCFDB9BE716BE9E9F9167D72
+      4664A8D652FB7D4B3146897DA0DEF69C191F646AA24AB968CE2DBC69DC06EED1
+      27A32056A0E4A068A5374A45C3E6769B893D307BA2C2E1D1A12BE4E40044A060
+      4115B477E00C8BDFFE1C89BCC7FBC0B1F103DC9CFFD294A052EFF8F5B5B5CECB
+      D4E6496AD3760A0882352653514250A238E6DAD9836C3502FF6C4687329BB1D4
+      E67E6A3379FAFAC28C538500D94DC00A149D2149945F2DE53F3617529BC74E55
+      11C0193062080A564081CC064410DD6953E0F8FE0A8B4B03370C6A4882A75F99
+      0D4EC06536AB35E1FD6AC4EFB6527006276A6DE41B40959DE5D930601123586B
+      51C0C5DDA85930C3E54A2946158C0822408E8D68EF48101154C1F9447F5C9DFB
+      B4AFEBA980B6410065B862993D7568978D094011061DA82A6E61EEE4347DBAF4
+      70254E6D1C38FA15D443100C39895AD7B3C9ABE726C18823A756BB534B6DF6EE
+      B20104B06684A0BE9B7B1075C3D79907CB636046419B990D19AB044D1A957261
+      F02FB76E00861030655A0000000049454E44AE426082
+    }
+  end
+  object Image32: TImage
+    Cursor = crHandPoint
+    Left = 846
+    Height = 16
+    Hint = 'Choose the working folder; then either type the base name as the file name,'#13#10'or select any file with that name (such as MyProfile.ini).'#13#10'Click this image to save the current .ini file.'
+    Top = 28
+    Width = 16
+    AutoSize = True
+    OnClick = Image32Click
+    ParentShowHint = False
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B47726170686963ED02000089504E47
+      0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000002
+      B449444154785EA5535D485469187EE6349261A566E48C1396A608456450BB16
+      25DE44454B10035DD8547411C1524B1779175141B5BB2C0576E552903F4CEDDA
+      0F528AA4A542564A98D3AC6E9AE154CE5FFE36BFE77CE77CDFDB39431E322F7D
+      E0F9DEF7BB78DEF7795F782D448485C08A1FD03DC2D609A24A21E8881E6D4208
+      7041213DD6E9D1BDAF34F33DBEC31C079D4349A72EBCBE26C76AB71007E71C06
+      244902E3C0E05822C885387570DBAA7BB31A6936691F883B15A6D516AE94ECB1
+      781CBD439378D0E3C7DD1763E8FC2F842F910436E6A7DB1332ABBDD9FED139A7
+      408B27522833B5BA38D79A119C8AA3A92F8C285350599E0F57453E562C5B8C47
+      9E203E84A2F8A96879465C66D5D79A860BCD1DC80A7395E42DC99B892A68ED0F
+      4391551CFAA5088005067697E6C2EB9B44D760187B363BB0B92033AFCB1B7201
+      B898729090D5C36912C1333A83A4CCA00A8EA92843873784DE77E3A932E51B56
+      62261647DFE804B2965A114FB2C3E608FA5C0E0B08BEF10834CEC13486DFEFF5
+      43B2086C5A9B8D4842C5C7CF31704DC0179C865592104B2A0E738444520111A0
+      E9649A9E0B4AFD77ACB7613AA6E0AFC6D790990602A05904C84286039805F48F
+      9F715EE4C84A47249A80109A4E81337F77C300573580040804BB2D074945359A
+      FACD02BA9DFAC078FC4269413646C6A6C00C0180CBC7CA20885055D3F5AD9BC0
+      D6925C0C7F9836C6AE3777A03B68687A3E1AB04AC0DE2DAB9166B540D354DCE9
+      788B7F3B876040122A76FF5C8CB445126EB50E04F4C537C00011A578F48F27CE
+      4357DA62CF0682D4F1C64F97DC3D74E26A2B1DFFB385CED776D3E3573E7ADAFF
+      892A4E37C676FEF68F7356673C260F9C6B76EE3FFB3050DFF63FF50E87C9E39B
+      48F1E5DB10DD68F6D2F693B70365BFBA4DB1C179D7B8ABEAFE3A2E8C63124738
+      173621085C889020AAD373F7AB1AD7FC635A08BE02CC09B289F75EDD1A000000
+      0049454E44AE426082
+    }
+    ShowHint = True
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'All files|*.*'
+    Options = [ofHideReadOnly, ofEnableSizing]
+    left = 984
+    top = 56
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Color profile (*.icc;*.icm)|*.icc;*.icm|Model-based profile (*.mpp)|*.mpp'
+    Options = [ofHideReadOnly, ofNoChangeDir, ofPathMustExist, ofFileMustExist, ofEnableSizing]
+    left = 984
+    top = 104
+  end
+  object OpenDialog2: TOpenDialog
+    Filter = 'Calibration file (*.cal)|*.cal'
+    Options = [ofHideReadOnly, ofNoChangeDir, ofPathMustExist, ofFileMustExist, ofEnableSizing]
+    left = 984
+    top = 152
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    Options = [ofHideReadOnly, ofNoChangeDir, ofPathMustExist, ofFileMustExist, ofOldStyleDialog, ofEnableSizing, ofViewDetail]
+    left = 984
+    top = 8
+  end
+  object OpenDialog3: TOpenDialog
+    Filter = 'Spectrum file (*.sp)|*.sp'
+    Options = [ofHideReadOnly, ofNoChangeDir, ofPathMustExist, ofFileMustExist, ofEnableSizing, ofViewDetail]
+    left = 984
+    top = 200
+  end
+  object OpenDialog4: TOpenDialog
+    Filter = 'Color profile (*.icc;*.icm)|*.icc;*.icm'
+    Options = [ofHideReadOnly, ofNoChangeDir, ofPathMustExist, ofFileMustExist, ofEnableSizing]
+    left = 984
+    top = 248
+  end
+  object OpenDialog5: TOpenDialog
+    Filter = 'Color profile (*.icc;*.icm)|*.icc;*.icm|Calibration file (*.cal)|*.cal'
+    Options = [ofHideReadOnly, ofNoChangeDir, ofPathMustExist, ofFileMustExist, ofEnableSizing]
+    left = 984
+    top = 296
+  end
+  object SaveDialog2: TSaveDialog
+    DefaultExt = '.icc'
+    Filter = 'Color profile (*.icc;*.icm)|*.icc;*.icm'
+    Options = [ofHideReadOnly, ofNoChangeDir, ofPathMustExist, ofEnableSizing]
+    left = 984
+    top = 352
+  end
+  object OpenDialog6: TOpenDialog
+    Filter = 'Colorimeter correction matrix (*.ccmx)|*.ccmx|Colorimeter calibration spectral sample (*.ccss)|*.ccss'
+    Options = [ofNoChangeDir, ofPathMustExist, ofFileMustExist, ofEnableSizing, ofViewDetail]
+    left = 984
+    top = 408
+  end
+end
